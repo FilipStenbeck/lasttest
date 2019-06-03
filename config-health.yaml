@@ -1,0 +1,15 @@
+config:
+  target: "https://tre.se/cms/health"
+  tls:
+    "rejectUnauthorized": false
+
+  phases:
+    - duration: 60
+      arrivalRate: 5
+
+scenarios:
+  - flow:
+      - get:
+          url: "http://tre.se/health"
+      #- get:
+      #    url: "https://web.bt1.tre.se/"

@@ -1,0 +1,17 @@
+{
+  "name": "load-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "simple": "artillery run config-simple.yaml",
+    "small": "artillery run config-small.yaml",
+    "health": "artillery run config-health.yaml",
+    "local": "artillery run config-local.yaml"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "artillery": "^1.6.0-28"
+  }
+}

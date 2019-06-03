@@ -1,0 +1,15 @@
+config:
+  target: "https://stage.webtest.tre.se/support/alla-kategorier"
+  tls:
+    "rejectUnauthorized": false
+
+  phases:
+    - duration: 60
+      arrivalRate: 3
+
+scenarios:
+  - flow:
+      - get:
+          url: "https://stage.webtest.tre.se/support/alla-kategorier"
+      #- get:
+      #    url: "https://web.bt1.tre.se/"

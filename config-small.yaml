@@ -1,0 +1,15 @@
+config:
+  target: "https://172.29.11.254/support"
+  tls:
+    "rejectUnauthorized": false
+
+  phases:
+    - duration: 60
+      arrivalRate: 5
+
+scenarios:
+  - flow:
+      - get:
+          url: "https://172.29.11.254/support"
+      #- get:
+      #    url: "https://web.bt1.tre.se/"
