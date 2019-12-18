@@ -1,0 +1,17 @@
+config:
+  target: "https://test.webtest.tre.se/support"
+
+  phases:
+    - duration: 60
+      arrivalRate: 5
+      rampTo: 10
+    - duration: 60
+      arrivalRate: 10
+      rampTo: 30
+scenarios:
+  - flow:
+      - get:
+          url: "https://test.webtest.tre.se/support"
+      # - think: 3
+      # - get:
+      #     url: "https://172.29.11.254/"

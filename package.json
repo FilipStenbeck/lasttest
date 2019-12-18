@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "simple": "artillery run config-simple.yaml",
-    "small": "artillery run config-small.yaml",
     "health": "artillery run config-health.yaml",
-    "local": "artillery run config-local.yaml"
+    "local": "artillery run config-local.yaml",
+    "prod": "artillery run config-prod-simple.yaml",
+    "stage": "artillery run config-stage-simple.yaml",
+    "test": "artillery run config-test-simple.yaml",
+    "stage:health": "artillery run config-stage-health.yaml",
+    "prod:health": "artillery run config-prod-health.yaml"
   },
   "author": "",
   "license": "ISC",

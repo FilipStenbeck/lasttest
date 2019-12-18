@@ -1,0 +1,17 @@
+config:
+  target: "https://stage.webtest.tre.se/health"
+
+  phases:
+    - duration: 60
+      arrivalRate: 50
+      rampTo: 200
+    # - duration: 60
+    #   arrivalRate: 10
+    #   rampTo: 30
+scenarios:
+  - flow:
+      - get:
+          url: "https://stage.webtest.tre.se/health"
+      # - think: 3
+      # - get:
+      #     url: "https://172.29.11.254/"

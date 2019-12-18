@@ -1,15 +1,13 @@
 config:
-  target: "https://172.29.11.254/support"
+  target: "http://local.tre.se:3000/support"
   tls:
     "rejectUnauthorized": false
 
   phases:
     - duration: 60
-      arrivalRate: 5
+      arrivalRate: 10
 
 scenarios:
   - flow:
       - get:
-          url: "https://172.29.11.254/support"
-      #- get:
-      #    url: "https://web.bt1.tre.se/"
+          url: "http://local.tre.se:3000/support"

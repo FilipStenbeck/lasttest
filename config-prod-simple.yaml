@@ -1,0 +1,14 @@
+config:
+  target: "https://www.tre.se/support/alla-kategorier"
+
+  phases:
+    - duration: 60
+      arrivalRate: 5
+    # - duration: 120
+    #   arrivalRate: 1
+    #   rampTo: 5
+
+scenarios:
+  - flow:
+      - get:
+          url: "https://www.tre.se/support/alla-kategorier"
